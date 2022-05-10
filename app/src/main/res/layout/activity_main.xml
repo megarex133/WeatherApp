@@ -10,7 +10,7 @@
     android:id="@+id/idPBLoading"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:visibility="visible"
+    android:visibility="gone"
     android:layout_centerInParent="true"/>
 
     <RelativeLayout
@@ -97,26 +97,31 @@
     android:textColor="@color/white"
     android:textSize="70dp"/>
 
-    <ImageView
-    android:id="@+id/idIVIcon"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/idTVTemperature"
-    android:layout_centerHorizontal="true"
-    android:layout_margin="10dp"
-    android:src="@mipmap/ic_launcher"/>
+        <ImageView
+            android:id="@+id/idIVIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/idTVTemperature"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/ic_launcher" />
 
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/idTVCondition"
-    android:layout_margin="10dp"
-    android:gravity="center"
-    android:textAlignment="center"
-    android:text="Condition"
-    android:textColor="@color/white"
-    android:layout_below="@id/idIVIcon"
-    />
+        <TextView
+            android:id="@+id/idTVCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVIcon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Condition"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="match_parent"

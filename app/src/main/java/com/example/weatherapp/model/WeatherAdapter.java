@@ -34,7 +34,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
     public void onBindViewHolder(@NonNull WeatherAdapter.ViewHolder holder, int position){
         WeatherModel weather = weatherList.get(position);
 
-        Picasso.get().load("Http://".concat(weather.getIcon())).into(holder.condition);
+        Picasso.get().load("http:".concat(weather.getIcon())).into(holder.condition);
         holder.wind.setText(weather.getWindSpeed()+"km/h");
         holder.temperature.setText(weather.getTemperature()+"°C");
         SimpleDateFormat inputDateTime = new SimpleDateFormat("yyyy-MM-dd hh:mm");
@@ -59,7 +59,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
             wind = itemView.findViewById(R.id.idTVWindSpeed);
             temperature = itemView.findViewById(R.id.idTVTemperature);
             time = itemView.findViewById(R.id.idTVTime);
-            condition = itemView.findViewById(R.id.idTVCondition);
+            condition = itemView.findViewById(R.id.idIVCondition);
 
         }
     }
