@@ -178,9 +178,9 @@ public class MainActivity extends AppCompatActivity {
                             weatherModelArrayList.add(new WeatherModel(day,temper,img,wind));
                         }
                 } catch(JSONException e){
-                    e.printStackTrace;
+                    e.printStackTrace();
                 }
-                weatherAdapter.noti
+                weatherAdapter.notifyDataSetChanged();
                 }
 
 
