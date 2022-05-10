@@ -92,8 +92,9 @@ public class MainActivity extends AppCompatActivity {
                 if (city.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Please, enter city", Toast.LENGTH_LONG).show();
                 } else {
-                    cityEditText.setText(cityName);
+                    cityNameTextView.setText(city);
                     getWeatherByCity(city);
+
                 }
             }
         });

@@ -38,13 +38,14 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
         holder.wind.setText(weather.getWindSpeed()+"km/h");
         holder.temperature.setText(weather.getTemperature()+"°C");
         SimpleDateFormat inputDateTime = new SimpleDateFormat("yyyy-MM-dd hh:mm");
-        SimpleDateFormat outputDateTime = new SimpleDateFormat("MMM dd");
-        try {
-            Date day = inputDateTime.parse(weather.getDay());
-            holder.time.setText(outputDateTime.format(day));
-        } catch(Exception e){
-            e.printStackTrace();
-        }
+        SimpleDateFormat outputDateTime = new SimpleDateFormat("MM dd");
+        holder.time.setText(weather.getDay());
+//        try {
+//            Date date = new Date(weather.getDay());
+//
+//        } catch(Exception e){
+//            e.printStackTrace();
+//        }
     }
 
     public int getItemCount(){

@@ -12,15 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/card_back">
+
         <TextView
+            android:id="@+id/idTVTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/idTVTime"
             android:gravity="center"
             android:padding="4dp"
             android:text="day"
             android:textAlignment="center"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

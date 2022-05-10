@@ -1,5 +1,8 @@
 package com.example.weatherapp.model;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class WeatherModel{
 
     private  String day;
@@ -9,6 +12,7 @@ public class WeatherModel{
 
     public WeatherModel(String newDay, String newTemperature, String newIcon, String newWindSpeed){
         day = newDay;
+
         temperature = newTemperature;
         icon = newIcon;
         windSpeed = newWindSpeed;
